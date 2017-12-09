@@ -1,0 +1,161 @@
+##
+## Clappy Cow
+##
+$the_cow = <<"EOC";
+    $thoughts
+     $thoughts
+      $thoughts
+                     ...(+ggggmmgMMM#Y7WK-
+                   .dHBBY9C(JdHWHH=?5^ ?WN-..
+                  .dD    .(MY|      .&_ (#9TXx
+               ..+W3^   (dMC^   .-. (m{ (M0<dR
+               (N0|    jW9?O&_ .Xk< (H{ (HZ>dP
+               (#C^    dS:  dr  XMr (@}^(WZ>dR
+               (#_     d0<  dr  (Mr .g} (WZ>dR
+               (#_     dS:  dr   dr .@} (WZ<db
+               (#_     dS:  dr   dr .Hl.(WZ|db
+               (#_     dS:  dm,  d& .TMr(Wk~db
+               (#_     dK<  dMb  dHl .dr(WN{dNm..
+               (#_     dK:   db  jXI  dr.?M{d#'TQ+.
+               (#_     dD|   dD  jXI .dr .g{db .dk=
+               (#_     d&   ^_^  (<|^ d3  7^db.dHC~
+               (#_     dr                     .HC
+               (#_     dr                    .s=
+               (#_     dR-                   (#|
+               (#_     dK<                   (#~
+               (#_     dK<                   (#~
+               (#_     dK<                   (#~
+               (#_     dK:                   (#_
+               (Ms.    dK<                   (#_
+               (WI_    dK:                   (#|
+               (Uk~    dS:                   J#~
+                .g{    dm2                  (y=
+                 OW{    db.                .dD
+                  dm&^  ?XK_              (&M
+                   ?B+.  (MH_           .(H&|
+                    _7Qg+ _7_          (w=|
+                    ..(dMb  dMWWMo.   dm+
+                  .(dMY7?|  d& .XMr   ?7Xme-
+                .XY=| ^   .-dr  dMr      .TYWx.
+               (mkodkkkkkQNNC~ .(MR-.       _jR-.
+              jMMMB^     (YWMmgMMMMM8+J,      .m{
+             jM#&^          d&|~~~~_.?HNs      ?dl
+             dMb           .-gy   (d#_ ?Wp.     dHm
+          .jHMMMHNo((JWNNNNMMMD   .dMNHMM#-      dM
+        (+gMNmgggMMMM#YTMM#Y7|.+&gd9''|?TN0~     dM
+     ..WM=^^^_~_~~<VME~ _^^.(dME|^    .dKC^     .dM
+    (Q8|               ^.(gWY|        d8>      Jdf7
+  .jW&                 (d9|           dH>  ..(d9:
+ .dMNe-              .gV|             dNo.JdMM#_
+ dMM%(9&.  ....,    (MB|              7WB9=^ J#_
+ MMM&(jM{.(kZWMK.  (d@~                     ^j#_
+ |BWa+@| dNdMM&J#_.dD                        J#_ 
+ |-(<|^  (X#C1dS> qHC                        J#_
+ MMMNmJJ..(TYY=  .dr                         J#_
+ |I?7HMMMNms.    zW{                         J#_
+ MNa&J-_?7TY^    zW>                         J#_
+ Mz~?TMMHm&-     zW{                         (#~
+ zH:   ?77'^     zX{                         (#_
+  ?WHm.           dr                .k:      (#~
+    ?74Qa-        ?Gx             .(gN{      (#~
+       <?THK-  ..  ?WN-..........dH9UM{      (#~
+           |_jdQmggx(?7HNNQQQM@?7?  (H{      (#~
+               (#C|7YWMHY3  dD|    (MN{      (#~
+               (#~   .Hl_   dr     (#=       (#~
+               (#_   .H2    dr     (#_       (#~
+               (#_   .@}    dr     (#_       (#~
+               (#_   .@|    dr     (#_       (#~
+               (#_   .g{    dr     (#_       (#~
+              .d#_   .g{    dr     (#_       (#_
+              JH8    .@|    dr    .d#_       (#|
+              JR<   .gN{   .Mr    (d#        (#_
+              dR<   (MB:   (Mr    (d@        (N+.
+              dK    (#_    (Wr    (d@        (MN:
+              db    (#_   .(Wr    (d@.       (MM:
+              dN+-. (#_ .(kS7|    (d@        (#> 
+               (TMNmuNad#Y|       (dK.      .j#~ 
+                .MMYvM=?          jH@     .gH8|
+                .MH>              dM&    .H9:
+                .Xb>              d@   .jKC
+                .WNl              db .(Z=
+                  ?THR...         vD.X:
+                    _TYYWaJ..  .J+JJY
+                         (dMNNNNkZ>
+EOC
+
+#                      ...(+ggggmmgMMM#Y7WK-
+#                    .dHBBY9C(JdHWHH=?5^ ?WN-..
+#                   .dD    .(MY|      .&_ (#9TXx
+#                ..+W3^   (dMC^   .-. (m{ (M0<dR
+#                (N0|    jW9?O&_ .Xk< (H{ (HZ>dP
+#                (#C^    dS:  dr  XMr (@}^(WZ>dR
+#                (#_     d0<  dr  (Mr .g} (WZ>dR
+#                (#_     dS:  dr   dr .@} (WZ<db
+#                (#_     dS:  dr   dr .Hl.(WZ|db
+#                (#_     dS:  dm,  d$ .TMr(Wk~db
+#                (#_     dK<  dMb  dHl .dr(WN{dNm..
+#                (#_     dK:   db  jXI  dr.?M{d#'TQ+.
+#                (#_     dD|   dD  jXI .dr .g{db .dk=
+#                (#_     d$   ^_^  (<|^ d3  7^db.dHC~
+#                (#_     dr                     .HC
+#                (#_     dr                    .s=
+#                (#_     dR-                   (#|
+#                (#_     dK<                   (#~
+#                (#_     dK<                   (#~
+#                (#_     dK<                   (#~
+#                (#_     dK:                   (#_
+#                (Ms.    dK<                   (#_
+#                (WI_    dK:                   (#|
+#                (Uk~    dS:                   J#~
+#                 .g{    dm2                  (y=
+#                  OW{    db.                .dD
+#                   dm&^  ?XK_              (M$
+#                    ?B+.  (MH_           .(H$|
+#                     _7Qg+ _7_          (w=|
+#                     ..(dMb  dMWWMo.   dm+
+#                   .(dMY7?|  d$ .XMr   ?7Xme-
+#                 .XY=| ^   .-dr  dMr      .TYWx.
+#                (mkodkkkkkQNNC~ .(MR-.       _jR-.
+#               jMMMB^     (YWMmgMMMMM8+J,      .m{
+#              jM#$^          d$|~~~~_.?HNs      ?dl
+#              dMb           .-gy   (d#_ ?Wp.     dHm
+#           .jHMMMHNo((JWNNNNMMMD   .dMNHMM#-      dM
+#         (+gMNmgggMMMM#YTMM#Y7|.+&gd9''|?TN0~     dM
+#      ..WM=^^^_~_~~<VME~ _^^.(dME|^    .dKC^     .dM
+#     (Q8|               ^.(gWY|        d8>      Jdf7
+#   .jW$                 (d9|           dH>  ..(d9:
+#  .dMNe-              .gV|             dNo.JdMM#_
+#  dMM%(9&.  ....,    (MB|              7WB9=^ J#_
+#  MMM$(jM{.(kZWMK.  (d@~                     ^j#_
+#  |BWa+@| dNdMM$J#_.dD                        J#_ 
+#  |-(<|^  (X#C1dS> qHC                        J#_
+#  MMMNmJJ..(TYY=  .dr                         J#_
+#  |I?7HMMMNms.    zW{                         J#_
+#  MNa&J-_?7TY^    zW>                         J#_
+#  Mz~?TMMHm&-     zW{                         (#~
+#  zH:   ?77'^     zX{                         (#_
+#   ?WHm.           dr                .k:      (#~
+#     ?74Qa-        ?Gx             .(gN{      (#~
+#        <?THK-  ..  ?WN-..........dH9UM{      (#~
+#            |_jdQmggx(?7HNNQQQM@?7?  (H{      (#~
+#                (#C|7YWMHY3  dD|    (MN{      (#~
+#                (#~   .Hl_   dr     (#=       (#~
+#                (#_   .H2    dr     (#_       (#~
+#                (#_   .@}    dr     (#_       (#~
+#                (#_   .@{    dr     (#_       (#~
+#                (#_   .g{    dr     (#_       (#~
+#               .d#_   .g{    dr     (#_       (#_
+#               JH8    .@{    dr    .d#_       (#|
+#               JR<   .gN{   .Mr    (d#        (#_
+#               dR<   (MB:   (Mr    (d@        (N+.
+#               dK    (#_    (Wr    (d@        (MN:
+#               db    (#_   .(Wr    (d@.       (MM:
+#               dN+-. (#_ .(kS7|    (d@        (#> 
+#                (TMNmuNad#Y|       (dK.      .j#~ 
+#                 .MMYvM=?          jH@     .gH8|
+#                 .MH>              dM$    .H9:
+#                 .Xb>              d@   .jKC
+#                 .WNl              db .(Z=
+#                   ?THR...         vD.X:
+#                     _TYYWaJ..  .J+JJY
+#                          (dMNNNNkZ>
